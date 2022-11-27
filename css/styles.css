@@ -10,6 +10,10 @@ label {
     display: block;
 }
 
+* {
+    transition: all .1s ease-in;
+}
+
 /* Header */
 
 .header {
@@ -50,7 +54,7 @@ label {
 }
 
 .list_item {
-    min-height: 45px;
+    min-height: 50px;
 }
 
 .list_item:nth-child(even) {
@@ -61,29 +65,36 @@ label {
     background: #7A7593;
 }
 
-input[type="checkbox"] {
-    opacity: 100;
+.checkbox {
+    opacity: 0;
     position: absolute;
-    margin: 15px;
-    width: 20px;
-    height: 20px;
+    margin: 0 12px;
+    width: 19px;
+    height: 19px;
 }
 
-.list_item_description:before {
-    content: '\2714';
-    color: #000000;
-    text-align: center;
-
-    border: 3px solid white;
+.custom_checkbox {
+    border: 2px solid white;
     background-color: #FFFFFF;
 
     margin: 12px;
-    display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 }
 
+.custom_checkbox:after {
+    content: '\2714';
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    display: none;
+}
+
+.checkbox:checked + .custom_checkbox:after {
+    display: block;
+}
 
 .list_item_description {
     font-weight: 400;
@@ -91,4 +102,57 @@ input[type="checkbox"] {
     line-height: 21px;
 
     color: #FFFFFF;
+
+    min-height: 45px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.item_comment {
+    font-size: 11px;
+    line-height: 13px;
+
+    margin-left: 5px;
+}
+
+.list_item_description:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.list_item_description:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.list_item_description:active {
+    background-color: #FF8984;
+}
+
+.checkbox:checked ~ .item_title, .checkbox:checked ~ .item_comment {
+    color: #9B96AC;
+    text-decoration: line-through;
+}
+.checkbox:after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    margin: 0 12px;
+    width: 19px;
+    height: 19px;
+}
+
+.item_title:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid white;
+    overflow: hidden;
 }
