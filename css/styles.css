@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     box-sizing: border-box;
-
     background: #3B3F45;
 }
 
@@ -12,7 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background: #4A4F56;
 }
 
@@ -20,9 +18,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-
     color: #FF8984;
-
     margin-top: 20px;
 }
 
@@ -30,9 +26,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
     color: #FF8984;
-
     margin-top: 5px;
     margin-bottom: 15px;
 }
@@ -68,9 +62,7 @@ body {
 .custom_checkbox {
     border: 2px solid white;
     background-color: #FFFFFF;
-
     margin: 12px;
-
     width: 16px;
     height: 16px;
 }
@@ -92,15 +84,11 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-
     color: #FFFFFF;
-
     min-height: 45px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
-
     cursor: pointer;
     position: relative;
 }
@@ -114,13 +102,11 @@ body {
     background: #625E77;
     border-top: 3px solid #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
-
     transition: all .1s ease-in;
 }
 
 .list_item_description:active {
     background-color: #FF8984;
-
     transition: all .1s ease-in;
 }
 
@@ -154,7 +140,6 @@ body {
     max-width: 550px;
     margin: 45px auto;
     background-color: #4A4F56;
-
     padding: 12px 0;
     position: relative;
 }
@@ -163,8 +148,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
     color: #FF8984;
-
     text-align: center;
 }
