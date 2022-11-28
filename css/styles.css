@@ -156,6 +156,7 @@ body {
     background-color: #4A4F56;
 
     padding: 12px 0;
+    position: relative;
 }
 
 .footer_text {
